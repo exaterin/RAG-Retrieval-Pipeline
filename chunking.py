@@ -8,9 +8,6 @@ from typing import (
     List,
     Literal,
     Optional,
-    Sequence,
-    Type,
-    TypeVar,
     Union,
 )
 import logger
