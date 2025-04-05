@@ -7,11 +7,11 @@ from embedding import EmbeddingModel
 from retrieval import RetrievalPipeline
 from evaluation import RetrievalEvaluator
 
-# Define your experiment parameters
-CHUNK_SIZES = [10, 50, 200, 300, 400]
-TOP_K_VALUES = [1, 5, 10]
+
+CHUNK_SIZES = [10, 50, 100, 200, 300, 400]
+TOP_K_VALUES = [1, 3, 5, 7, 10]
 CORPUS_ID = "wikitexts"
-TEXT_FILE = f"corpora/{CORPUS_ID}.md"
+TEXT_FILE = f"data/{CORPUS_ID}.md"
 QUESTIONS_FILE = "questions_df.csv"
 
 def run_experiment(chunk_size, top_k):
